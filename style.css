@@ -95,6 +95,10 @@ p {
 }
 
 @media only screen and (max-width:1000px) {
+   html {
+        overflow: scroll;
+    }
+
     .container {
         display: flex;
         flex-direction: column-reverse;
@@ -102,6 +106,7 @@ p {
         align-items: center;
         min-width: 60vh;
         min-height: 50vh;
+        top: 60%;
 
     }
 
