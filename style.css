@@ -1,0 +1,140 @@
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 100%);
+}
+
+html {
+    background-color: hsl(233, 47%, 7%);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 50vh;
+
+}
+
+.left {
+    background-color: hsl(244, 38%, 16%);
+    min-width: 50%;
+    max-width: 50%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.image {
+    min-width: 50%;
+    max-width: 50%;
+    background-image: url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: hsla(277, 64%, 61%, 0.596);
+    background-blend-mode: soft-light;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+
+
+h1 {
+    margin: 25px 0;
+    font-size: 3rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.in {
+    font-size: 3rem;
+    color: hsl(277, 64%, 61%);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:1500px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-width: 60vh;
+        min-height: 50vh;
+
+    }
+
+
+
+    .left {
+        min-width: 80%;
+        max-width: 80%;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-content: center;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .image {
+        min-width: 80%;
+        max-width: 80%;
+        height: 30vh;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 0;
+
+    }
+
+    .stats {
+        display: block;
+
+    }
+
+    .stats div {
+        margin: 3rem;
+
+    }
+}
